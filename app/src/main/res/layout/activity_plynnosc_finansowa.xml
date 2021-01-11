@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ob"
+    tools:context="com.example.sony.androidproject.PlynnoscFinansowa">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="13dp"
+                android:text="Proszę wpisać odpowiednie liczby"
+
+                android:textColor="?android:attr/textColorSecondaryInverse"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/zapasy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="18dp"
+                android:hint="Zapasy"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/zobowiazaniaBiezace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/aktywaObrotowe"
+                android:hint="Zobowiązania bieżące"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/aktywaObrotowe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/zapasy"
+                android:hint="Aktywa obrotowe"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/krotRozMiedzokres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/zobowiazaniaBiezace"
+                android:hint="Krótkoterminowe rozliczenie międzyokresowe"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/srodkiPieniezne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/krotkoterminoweRozliczenieMiedzyokresowe"
+                android:hint="Srodki pieniężne i inne aktywa pieniężne"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/srodkiPieniezneIInneAktywaPieniezne"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:onClick="calculatePlynnosc"
+                android:text="Oblicz wskaźniki" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

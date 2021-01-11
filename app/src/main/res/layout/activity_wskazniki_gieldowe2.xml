@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/x7135"
+    tools:context="com.example.sony.androidproject.WskaznikiGieldowe2">
+
+    <LinearLayout
+        android:layout_width="367dp"
+        android:layout_height="489dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/zyskNaAkcje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@android:color/background_light"
+            tools:text="B/D" />
+
+        <TextView
+            android:id="@+id/witaj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wskaźnik ten niesie bardzo ważną informację dla akcjonariuszy. Informuje on ile zysku wypracował kapitał zainwestowany przez nich w przedsiębiorstwo. Jest to jeden z bardziej popularnych wskaźników analizy fundamentalnej."
+            android:textColor="@android:color/background_light"
+            tools:text="zysk na akcję (earnings per share-eps) - opis" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/wskaznikDiwydentyNaAkcje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@android:color/background_light"
+            tools:text="B/D" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wskaźnik dywidendy na akcję jest w gospodarkach kapitałowych jednym z pilniej śledzonych wskaźników przez inwestorów. Jego wielkość pokazuje jaką sumę otrzyma akcjonariusz jako udział w zysku przedsiębiorstwa na każdą posiadaną przez niego akcję."
+            android:textColor="@android:color/background_light"
+            tools:text="wskaźnik dywidendy na akcję - opis" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/cenaAkcjiDoZyskuNaAkcje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@android:color/background_light"
+            tools:text="B/D" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wskaźnik ten pokazuje ile razy cena rynkowa jest wyższa od zysku na jedną akcję. Cena jest z reguły wyższa, gdyż opisuje oczekiwania inwestorów odnośnie przyszłych zysków."
+            android:textColor="@android:color/background_light"
+            tools:text="wskaźnik cena akcji do zysku na akcję (price earnings  ratio - PE) - opis" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/wartoscKsiegowaNaAkcje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@android:color/background_light"
+            tools:text="B/D" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Korzystne zjawisko w przypadku tego wskaźnika występuje wtedy, gdy jest on niższy od ceny rynkowej akcji. Oznacza to, że inwestorzy oceniają wartość przedsiębiorstwa wyżej niż wynika to z ilości kapitału przez niego posiadanego, a więc oczekują jego rozwoju i tego, iż będzie generować zyski."
+            android:textColor="@android:color/background_light"
+            tools:text="wartość księgowa na akcję (book value per share - bvs) - opis" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/wskaznikProduktywnosciJednejAkcji"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@android:color/background_light"
+            tools:text="B/D" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wysokość tego wskaźnika opisuje wielkość działalności przedsiębiorstwa. Wzrost tego wskaźnika jest bardzo korzystnym zjawiskiem, ponieważ - nawet przy utrzymaniu stałej rentowności - świadczy o rozwoju jednostki i powoduje wzrost zysku przypadającego na jedną akcję."
+            android:textColor="@android:color/background_light"
+            tools:text="wskaźnik produktywności jednej akcji - opis" />
+
+    </LinearLayout>
+
+</RelativeLayout>

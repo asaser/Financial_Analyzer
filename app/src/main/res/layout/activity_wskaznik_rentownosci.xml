@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ob"
+    tools:context="com.example.sony.androidproject.WskaznikRentownosci">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Proszę wpisać odpowiednią liczbę"
+                android:textColor="?android:attr/textColorTertiaryInverse"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/aktywaOgolem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/wynikFinansowy"
+                android:hint="Aktywa ogółem"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/przychodyZeSprzedazy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/kosztUzyskaniaPrzychodow"
+                android:hint="Przychody ze sprzedaży"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/zyskBiezacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView3"
+                android:hint="Zysk bieżący"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/kosztUzyskaniaPrzychodow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/strataZLatUbieglych"
+                android:hint="Koszt uzyskania przychodów"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/kapitalWlasny"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/aktywaOgolem"
+                android:hint="Kapitał własny"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/strataZLatUbieglych"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/zyskBiezacy"
+                android:hint="Strata z lat ubiegłych"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/zyskNetto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/wynikFinansowyBrutto"
+                android:hint="Wynik finansowy netto"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="calculate"
+                android:text="Oblicz wskaźniki" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

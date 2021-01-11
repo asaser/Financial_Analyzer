@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ob"
+    tools:context="com.example.sony.androidproject.WskaznikiGieldowe">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Proszę wpisać odpowiednie liczby"
+                android:textColor="?android:attr/textColorTertiaryInverse"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/iloscAkcjiZwyklych"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/zyskNaAkcje"
+                android:hint="Ilośc akcji zwykłych"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/zyskPrzeznaczonyNaDywidenty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/cenaAkcji"
+                android:hint="Zysk przeznaczony na dywidenty"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/przychodZeSprz1Akc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/przecietnaIloscAkcji"
+                android:hint="Przychód ze sprzedaży"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/zyskNetto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView2"
+                android:hint="Zysk netto"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/kapitalWlasny"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/przychodZeSprzedazyNa1Akcje"
+                android:hint="Kapitał własny"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/cenaAkcji"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/kapitalWlasny"
+                android:hint="Cena akcji"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cenaAkcji"
+                android:onClick="calculate"
+                android:hint="Oblicz wskaźniki" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>
